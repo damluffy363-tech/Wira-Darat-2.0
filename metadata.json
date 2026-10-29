@@ -1,0 +1,6 @@
+{
+  "name": "Wira Darat: Simulasi Kerjaya Tentera Darat",
+  "description": "Simulasi kerjaya interaktif Tentera Darat dengan sistem kor, GGK, kewangan, kesan bunyi procedural, dan sokongan responsif untuk iPhone, Android, serta laptop.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

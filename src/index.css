@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #0b130c;
+    --panel-dark: #142116;
+    --accent-gold: #dfce88;
+    --accent-green: #82bc67;
+  }
+
+  html {
+    background-color: var(--bg-dark);
+    color: #e5ede2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: #0c140d;
+    background-image: 
+      radial-gradient(ellipse at 15% -10%, rgba(100, 130, 80, 0.22), transparent 45%),
+      radial-gradient(ellipse at 95% 15%, rgba(145, 126, 70, 0.12), transparent 35%),
+      linear-gradient(135deg, rgba(255, 255, 255, 0.012) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.012) 50%, rgba(255, 255, 255, 0.012) 75%, transparent 75%, transparent);
+    background-size: auto, auto, 32px 32px;
+    overflow-x: hidden;
+  }
+
+  /* Safe area insets for iPhone notch & home indicator */
+  .pb-safe {
+    padding-bottom: max(env(safe-area-inset-bottom, 0px), 16px);
+  }
+
+  .pt-safe {
+    padding-top: max(env(safe-area-inset-top, 0px), 0px);
+  }
+
+  /* Custom military scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0f1811;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #344832;
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #506f4c;
+  }
+}
